@@ -16,7 +16,7 @@ Then the will be merged and show a sucess message
 
 @MergeCommitsConflict
 Scenario: Merge a commit with conflict
-When i drag a commit to another
+When i drag a commit to another with conflict
 And i write a merge message
 And i press the submit button
 Then the will be merged and show a error message

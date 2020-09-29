@@ -7,7 +7,7 @@ When('i drag a commit to another') do
 
   When('i drag a commit to another with conflict') do
     gitApp.load
-    gitApp.commitOneCircle.drag_to(gitApp.commitTwoCircle)
+    gitApp.commitTwentysixCircle.drag_to(gitApp.commitFourCircle)
     sleep(2)
   end
   

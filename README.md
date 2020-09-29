@@ -1,11 +1,12 @@
 # Capybara Test Automation Project
-The goal of this project is to run automated tests in a web based application using Ruby programming language. And also using Capybara, RSpec and SitePrism frameworks.
+The goal of this project is to run automated tests in a web based application using Ruby programming language. And also using Capybara, RSpec, Cucumber and SitePrism frameworks.
 
 Dependencies:
 - Ruby - https://rubyinstaller.org/downloads/
 - Bundler - gem install bundler
 - RSpec (used for assertions) - gem install rspec
 - Capybara (used to simulate the real user in a application) - gem install capybara
+- Cucumber (BDD Testing) - gem install cucumber
 - SitePrism (used for a cleaner and simpler use of Page Object Model pattern with Capybara) - gem install site_prism
 
 # How to run

@@ -15,7 +15,7 @@ From project root folder:
 - bundle install
 
 From the /tests folder:
-- bundle exec cucumber -t @testTag
+- bundle exec cucumber -t @CucumberTag
 
 # Cucumber Tags
 @GitApp

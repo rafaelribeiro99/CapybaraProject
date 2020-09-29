@@ -6,3 +6,7 @@ Dependencies:
 - RSpec (used for assertions)
 - Capybara (used to simulated the real user in a application)
 - SitePrism (used for a cleaner and simpler use of Page Object Model pattern with Capybara)
+
+# How to run
+
+- 

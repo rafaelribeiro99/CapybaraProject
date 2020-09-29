@@ -22,13 +22,13 @@ From the /tests folder:
 - bundle exec cucumber -t @testTag
 
 # Tags
-- @GitApp
-Run all the tests
+@GitApp
+- Run all the tests
 
-- @MergeCommits
-Run all the tests from the Merge Commit feature
+@MergeCommits
+- Run all the tests from the Merge Commit feature
 
-- @ClickCommit
-Run all the tests from the Click Commit feature
+@ClickCommit
+- Run all the tests from the Click Commit feature
 
 It is possible to run individual test cases. Tags for individual test cases are in the test plan document.

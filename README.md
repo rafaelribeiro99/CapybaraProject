@@ -32,3 +32,6 @@ From the /tests folder:
 - Run all the tests from the Click Commit feature
 
 It is possible to run individual test cases. Tags for individual test cases are in the test plan document.
+
+# Reports
+Reports will be generated as a HTML file and will be stored inside the 'report' folder inside the project

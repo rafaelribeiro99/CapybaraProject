@@ -23,7 +23,6 @@ When('i drag a commit to another') do
     gitApp.press_close
   end
   
-  
 #THEN STATEMENTS
   Then('the will be merged and show a sucess message') do
     @msg = find(:xpath, '/html/body/div[3]/div/div/p[2]')

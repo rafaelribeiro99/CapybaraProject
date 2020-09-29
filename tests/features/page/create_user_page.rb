@@ -1,3 +1,7 @@
+=begin
+This page is not being used. It's only to show
+the Page Object Model pattern using SitePrism
+=end
 class User < SitePrism::Page
     set_url 'users/new'
     element :name, '#user_name'

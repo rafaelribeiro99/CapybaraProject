@@ -29,4 +29,5 @@ From the /tests folder:
 It is possible to run individual test cases. Tags for individual test cases are located in the test plan document.
 
 # Reports
-Reports will be generated as a HTML file and will be stored inside the 'report' folder inside the project.
+- Reports will be generated as a HTML file and will be stored inside the 'report' folder inside the project.
+- Screenshots are taken at the end of every test case and are saved in the report/screenshots folder.

@@ -1,3 +1,8 @@
+=begin
+Step definitions: this is where we implement the actions of our
+statements/phrases
+=end
+
 #WHEN STATEMENTS
 When('i drag a commit to another') do
     gitApp.load
@@ -13,6 +18,11 @@ When('i drag a commit to another') do
   
   When('i write a merge message') do
     gitApp.write_message
+  end
+
+  When('i write a specific merge message') do |table|
+    @message = table.rows_hash['message']
+    gitApp.mergeMessageField.set @message
   end
   
   When('i press the submit button') do

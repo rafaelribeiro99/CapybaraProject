@@ -1,3 +1,4 @@
+#This is no longer necessary to track pages
 Dir[File.join(File.dirname(__FILE__), "../pages/*_page.rb")].each{|file| require file}
 
 =begin

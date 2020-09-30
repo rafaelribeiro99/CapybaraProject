@@ -1,3 +1,4 @@
+#require 'fileutils'
 module Helper
 
     def print_screen(file_name, result)

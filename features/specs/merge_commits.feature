@@ -8,26 +8,34 @@ Feature: Merge Commits
 - As user: Merge commits but clicking and dragging from one commit to the other
 
 @MergeCommitsSuccess
-Scenario: Merge a commit
+Scenario: Verify merging commits successfully
 When i drag a commit to another
 And i write a merge message
 And i press the submit button
 Then the will be merged and show a sucess message
 
+@MergeCommitsWithMessage
+Scenario: Merge a commit with a message
+When i drag a commit to another
+And i write a specific merge message
+|message|this is a specific message|
+And i press the submit button
+Then the will be merged and show a sucess message
+
 @MergeCommitsConflict
-Scenario: Merge a commit with conflict
+Scenario: Verify merging commits with conflict with each other
 When i drag a commit to another with conflict
 And i write a merge message
 And i press the submit button
 Then the will be merged and show a error message
 
 @MergeCommitsNoMsg
-Scenario: Merge a commit without a message
+Scenario: Verify merging commits without a message
 When i drag a commit to another
 Then the submit button will be disabled
 
 @MergeCommitsClose
-Scenario: Merge a commit and close message window
+Scenario: Verify merging commits and closing the modal
 When i drag a commit to another
 And i write a merge message
 And i press the close button

@@ -41,20 +41,18 @@ class GitApp < SitePrism::Page
     element :mergeModal, 'body > div.ReactModalPortal > div > div'
     element :originCommit, 'body > div.ReactModalPortal > div > div > p > strong:nth-child(1)'
     element :targetCommit, 'body > div.ReactModalPortal > div > div > p > strong:nth-child(2)'
-    element :mergeMessage, '[name="message"]'
+    element :mergeMessageField, '[name="message"]'
     element :closeBt, 'body > div.ReactModalPortal > div > div > div > button:nth-child(1)'
     element :submitBt, 'body > div.ReactModalPortal > div > div > div > button:nth-child(2)'
 
+    # Methods to interact with some of the elements
+    # These are actions that will be using often
     def click_commit
         commitOne.click
     end
 
-    def drag_commits
-        commitOneCircle.drag_to(commitTwoCircle)
-    end
-
     def write_message
-        mergeMessage.set 'woops! update without where.'
+        mergeMessageField.set 'woops! update without where.'
     end
 
     def press_submit
@@ -65,7 +63,14 @@ class GitApp < SitePrism::Page
         closeBt.click 
     end
 
-#Example on how to create a Section with SitePrism
+=begin
+    def drag_commits
+        commitOneCircle.drag_to(commitTwoCircle)
+    end
+=end
+
+# Example on how to create a Section with SitePrism
+# Section its a specific part inside the Page
 =begin
     class GitAppModal < SitePrism::Section
         element :message, '#'
